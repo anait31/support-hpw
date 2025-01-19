@@ -3,14 +3,22 @@ import logo from '../src/assets/logo.jpg'
 import { Link } from 'react-router-dom'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
+import { IoLogoWhatsapp } from "react-icons/io";
+import { RiWechat2Fill } from "react-icons/ri";
+import { SiLivechat } from "react-icons/si";
 
 function App() {
 
   return (
     <>
       <div className=''>
-        <div className="navbar text-neutral-content max-w-6xl mx-auto">
-          <Link to={'/'}><img src={logo} alt="" /></Link>
+        <div className='bg-black'>
+          <div className="navbar text-neutral-content max-w-6xl mx-auto">
+            <Link className='' to={'/'}>
+              <img className='h-12 object-cover' src={logo} alt="" />
+              <p className='ml-4 text-3xl text-orange-300'> Winners PlayGround</p>
+              </Link>
+          </div>
         </div>
         <section className='py-16'>
           <div id="hero" className='max-w-6xl mx-auto text-center'>
@@ -27,9 +35,29 @@ function App() {
             </div>
           </div>
         </section>
-        <section className='max-w-6xl mx-auto'>
-          <h2>Setting Up Public DNS</h2>
-          <div className=''>
+        <section className='max-w-6xl mx-auto pb-16'>
+          <div id="hero" className='max-w-6xl mx-auto text-center'>
+            <h1 className='text-4xl'>Having Difficulties Accessing Our Site?</h1>
+            <p className='text-2xl my-2'>Please Contact With Our Special Customer Support Specialist.</p>
+            <div className=''>
+              <div className='space-x-3 flex justify-center'>
+                <Link className='border-2 p-4 rounded-lg' to={'/'}>
+                  <IoLogoWhatsapp className='text-4xl w-full'></IoLogoWhatsapp>
+                  <button className='px-6 py-2 rounded-md'>Whatsapp</button>
+                </Link>
+                <Link className='border-2 p-4 rounded-lg' to={'/'}>
+                  <RiWechat2Fill className='text-4xl w-full'></RiWechat2Fill>
+                  <button className='px-6 py-2 rounded-md'>Wechat</button>
+                </Link>
+                <Link className='border-2 p-4 rounded-lg' to={'/'}>
+                  <SiLivechat className='text-4xl w-full'></SiLivechat>
+                  <button className='px-6 py-2 rounded-md'>Live Chat</button>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <h2 className='text-center mt-4 text-4xl font-bold'>Setting Up Public DNS</h2>
+          <div className='mt-8'>
             <Tabs>
               <div className='text-center'>
                 <TabList>
