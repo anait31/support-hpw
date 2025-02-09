@@ -21,8 +21,8 @@ function App() {
             </Link>
           </div>
         </div>
-        <section className='pb-16 pt-8 bg-black text-white'>
-          <div className='flex items-center max-w-6xl mx-auto '>
+        <section className='pt-8 bg-black text-white'>
+          <div className='flex gap-8 items-center max-w-6xl mx-auto '>
             <div id="hero" className='text-center w-1/2'>
               <h1 className='text-5xl'>Stay Accessible Anytime, Anywhere</h1>
               <p className='text-2xl my-2'>Please save this info domain for backup purposes.</p>
@@ -120,105 +120,109 @@ function App() {
                 </TabPanel>
                 <TabPanel>
                   <ol className='list-decimal'>
-                    <h2>IPv4</h2>
-                    <li>Go to System Preferences. You can find it by pressing <span>Command</span> + <span>Space</span> on your keyboard and typing <span>System Preferences</span>.</li>
-                    <li>Click on the Network icon Advanced.</li>
-                    <li>Select the <span>DNS</span> tab. Take note of any IP addresses you might have and save them in a safe place in case you need to use them later.</li>
+                    <h2 className='text-2xl'>IPv4</h2>
+                    <li>Go to System Preferences. You can find it by pressing <span className='bg-slate-400 p-1 rounded-sm'>Command</span> + <span className='bg-slate-400 p-1 rounded-sm'>Space</span> on your keyboard and typing <span className='font-bold text-orange-500'>System Preferences</span>.</li>
+                    <li>Click on the <span className='font-bold text-orange-500'>Network</span> icon {'>'} <span className='font-bold text-orange-500'>Advanced</span>.</li>
+                    <li>Select the <span className='font-bold text-orange-500'>DNS</span> tab. Take note of any IP addresses you might have and save them in a safe place in case you need to use them later.</li>
                     <li>
                       Remove any IP addresses that may be already listed and in their place add:
-                      <div>
+                      <div className='bg-slate-800 p-6 rounded-lg my-2'>
                         <ol>
                           <li>Cloudflare</li>
                           <li>1.1.1.1</li>
                           <li>1.0.0.1</li>
-                          <li>Or</li>
+                          <li className='my-2'>OR</li>
                           <li>Google Public DNS</li>
                           <li>8.8.8.8</li>
                           <li>8.8.4.4</li>
                         </ol>
                       </div>
                     </li>
-                    <li>Click OK.</li>
-                    <h2>IPv6</h2>
-                    <li>Go to System Preferences. You can find it by pressing <span>Command</span> + <span>Space</span> on your keyboard and typing <span>System Preferences</span>.</li>
-                    <li>Click on the Network icon Advanced.</li>
-                    <li>Select the <span>DNS</span> tab. Take note of any IP addresses you might have and save them in a safe place in case you need to use them later.</li>
+                    <li>Click<span className='font-bold text-orange-500'>OK</span> {'>'}<span className='font-bold text-orange-500'>Apply</span>.</li>
+                    <h2 className='text-2xl'>IPv6</h2>
+                    <li>Go to System Preferences. You can find it by pressing <span className='bg-slate-400 p-1 rounded-sm'>Command</span> + <span className='bg-slate-400 p-1 rounded-sm'>Space</span> on your keyboard and typing <span className='font-bold text-orange-500'>System Preferences</span>.</li>
+                    <li>Click on the <span className='font-bold text-orange-500'>Network</span> icon {'>'} <span className='font-bold text-orange-500'>Advanced</span>.</li>
+                    <li>Select the <span className='font-bold text-orange-500'>DNS</span> tab. Take note of any IP addresses you might have and save them in a safe place in case you need to use them later.</li>
                     <li>
                       Remove any IP addresses that may be already listed and in their place add:
-                      <div>
+                      <div className='bg-slate-800 p-6 rounded-lg my-2'>
                         <ol>
                           <li>Cloudflare</li>
                           <li>2606:4700:4700::1111</li>
                           <li>2606:4700:4700::1001</li>
-                          <li>Or</li>
+                          <li className='my-2'>OR</li>
                           <li>Google Public DNS</li>
                           <li>2001:4860:4860::8888</li>
                           <li>2001:4860:4860::8844</li>
                         </ol>
                       </div>
                     </li>
-                    <li>Click OK.</li>
+                    <li>Click<span className='font-bold text-orange-500'>OK</span> {'>'}<span className='font-bold text-orange-500'>Apply</span>.</li>
                   </ol>
                 </TabPanel>
                 <TabPanel>
                   <div>
-                    <p><span>1.1.1.1: Faster Internet</span> is the preferred method of setting up 1.1.1.1 DNS resolver, as it allows you to automatically configure your phone to use 1.1.1.1 on any network you connect to.</p>
+                    <p><span className='font-bold text-orange-500'>1.1.1.1: Faster Internet</span> is the preferred method of setting up 1.1.1.1 DNS resolver, as it allows you to automatically configure your phone to use 1.1.1.1 on any network you connect to.</p>
                     <p>The app also allows you to enable encryption for DNS queries or enable WARP mode, which keeps all your HTTP traffic private and secure, including your DNS queries to 1.1.1.1.</p>
                     <p>You can select between these two options in 1.1.1.1: Faster Internet's settings. By default, 1.1.1.1:Faster Internet is configured to WARP mode.</p>
                   </div>
-                  <h2>Set up 1.1.1.1: Faster Internet</h2>
+                  <h2 className='text-2xl'>Set up 1.1.1.1: Faster Internet</h2>
                   <ol className='list-decimal'>
-                    <li>Download <span>1.1.1.1: Faster Internet from Google Play</span> for free.</li>
+                    <li>Download <span className='font-bold text-orange-500'>1.1.1.1: Faster Internet from Google Play</span> for free.</li>
                     <li>Launch 1.1.1.1: Faster Internet and accept the Terms of Service.</li>
-                    <li>Toggle the <span>WARP</span> button to <span>Connected</span>.</li>
+                    <li>Toggle the <span className='font-bold text-orange-500'>WARP</span> button to <span className='font-bold text-orange-500'>Connected</span>.</li>
                     <li>Install the VPN profile that allows your phone to connect securely to 1.1.1.1.</li>
-                    <li>
-                      Your connection to the Internet and your DNS queries are now protected. Alternatively, you may want to only encrypt your DNS queries and leave the remaining traffic unencrypted. If this is the case:
-                      <div>
-                        <ol>
-                          <li>Open 1.1.1.1: Faster Internet.</li>
-                          <li>Toggle the WARP button and choose <span>Switch to DNS only mode</span>. If the WARP toggle is disconnected, tap the <span>menu button</span>.</li>
-                          <li>You will see two options: 1.1.1.1 and WARP. Select <span>1.1.1.1 Done</span>.</li>
-                        </ol>
-                      </div>
-                      <p>You are now using encryption only for your DNS queries.</p>
-                    </li>
+                  </ol>
+                  <p>
+                    Your connection to the Internet and your DNS queries are now protected. Alternatively, you may want to only encrypt your DNS queries and leave the remaining traffic unencrypted. If this is the case:
+                  </p>
+                  <div>
+                    <ol className='list-decimal'>
+                      <li>Open 1.1.1.1: Faster Internet.</li>
+                      <li>Toggle the WARP button and choose <span className='font-bold text-orange-500'>Switch to DNS only mode</span>. If the WARP toggle is disconnected, tap the <span className='font-bold text-orange-500'>menu button</span>.</li>
+                      <li>You will see two options: 1.1.1.1 and WARP. Select <span className='font-bold text-orange-500'>1.1.1.1</span>.</li>
+                    </ol>
+                  </div>
+                  <p>You are now using encryption only for your DNS queries.</p>
+                  <div>
+                    <h2 className='text-2xl'>Configure 1.1.1.1 manually</h2>
+                    <h3 className='text-xl'>Android 9 Pie or later</h3>
+                    <p>Android Pie and later supports DNS over TLS to secure your queries through encryption. In Android, this option is called Private DNS and it prevents your queries from being tracked, modified or surveilled by third-parties. Unlike previous versions of Android, this method also ensures 1.1.1.1 does not need to be configured for each new WiFi network your smartphone joins.</p>
                     <div>
-                      <h2>Configure 1.1.1.1 manually</h2>
-                      <h3>Android 9 Pie or later</h3>
-                      <p>Android Pie and later supports DNS over TLS to secure your queries through encryption. In Android, this option is called Private DNS and it prevents your queries from being tracked, modified or surveilled by third-parties. Unlike previous versions of Android, this method also ensures 1.1.1.1 does not need to be configured for each new WiFi network your smartphone joins.</p>
-                      <div>
-                        <ol>
-                          <li>Go to <span>Settings Network & internet.</span></li>
-                          <li>Select <span>Advanced Private DNS</span>.</li>
-                          <li>Select the <span>Private DNS provider hostname</span> option.</li>
-                          <li>Enter <span>one.one.one.one</span> or <span>1dot1dot1dot1.cloudflare-dns.com</span> and press <span>Save</span>.</li>
-                          <li>Visit <span>1.1.1.1/help</span> to verify DNS over TLS is enabled.</li>
-                        </ol>
-                      </div>
-                      <div>
-                        <h2>Previous Android versions</h2>
-                        <ol>
-                          <li>Open <span>Settings Wi-Fi</span>.</li>
-                          <li>Press down and hold on the name of the network you are currently connected to.</li>
-                          <li>Click <span>Modify Network</span>.</li>
-                          <li>Select the check box <span>Show Advanced Options</span>.</li>
-                          <li>Change the IP Settings to <span>Static</span>.</li>
-                          <li>Take note of any IP addresses you might have and save them in a safe place in case you need to use them later.</li>
-                          <li>
-                            Remove any IP addresses that may be already listed and in their place add:
+                      <ol className='list-decimal'>
+                        <li>Go to <span className='font-bold text-orange-500'>Settings </span> {'>'} <span className='font-bold text-orange-500'>Network & internet</span>.</li>
+                        <li>Select <span className='font-bold text-orange-500'>Advanced</span> {'>'} <span className='font-bold text-orange-500'>Private DNS</span>.</li>
+                        <li>Select the <span className='font-bold text-orange-500'>Private DNS provider hostname</span> option.</li>
+                        <li>Enter <span className='font-bold text-orange-500'>one.one.one.one</span> or <span className='font-bold text-orange-500'>1dot1dot1dot1.cloudflare-dns.com</span> and press <span className='font-bold text-orange-500'>Save</span>.</li>
+                        <li>Visit <span className='font-bold text-orange-500'>1.1.1.1/help</span> to verify DNS over TLS is enabled.</li>
+                      </ol>
+                    </div>
+                    <div>
+                      <h2 className='text-2xl'>Previous Android versions</h2>
+                      <ol className='list-decimal'>
+                        <li>Open <span className='font-bold text-orange-500'>Settings</span> {'>'} <span className='font-bold text-orange-500'>Wi-Fi</span>.</li>
+                        <li>Press down and hold on the name of the network you are currently connected to.</li>
+                        <li>Click <span className='font-bold text-orange-500'>Modify Network</span>.</li>
+                        <li>Select the check box <span className='font-bold text-orange-500'>Show Advanced Options</span>.</li>
+                        <li>Change the IP Settings to <span className='font-bold text-orange-500'>Static</span>.</li>
+                        <li>Take note of any IP addresses you might have and save them in a safe place in case you need to use them later.</li>
+                        <li>
+                          Remove any IP addresses that may be already listed and in their place add:
+                          <div className='bg-slate-800 p-6 rounded-lg my-2'>
                             <ol>
                               <li>1.1.1.1</li>
                               <li>1.0.0.1</li>
                               <li>2606:4700:4700::1111</li>
                               <li>2606:4700:4700::1001</li>
                             </ol>
-                          </li>
-                          <li>Click Save. You may need to disconnect from the Wi-Fi and reconnect for the changes to take place.</li>
-                        </ol>
-                      </div>
+                          </div>
+                        </li>
+                        <li>Click <span className='font-bold text-orange-500'>Save</span>. You may need to disconnect from the Wi-Fi and reconnect for the changes to take place.</li>
+                      </ol>
                     </div>
-                  </ol>
+                  </div>
+
+
                 </TabPanel>
                 <TabPanel>
                   <p>1.1.1.1: Faster Internet is the preferred method of setting up 1.1.1.1 DNS resolver in iOS devices. It allows you to automatically configure your phone to use 1.1.1.1 on any network you connect to, and solves iOS inability of using an alternative DNS resolver in cellular connections.
@@ -269,8 +273,8 @@ function App() {
                 </TabPanel>
               </Tabs>
             </div>
-            <div className='bg-slate-800 p-6 rounded-lg my-2 border-l-2'>
-              <p><span>Note:</span> Setting up a static IP address to configure a DNS server may prevent you from connecting to some public Wi-Fi networks that use captive portals (these are the web pages some wireless networks employ to let users log in and use their services).</p>
+            <div className='bg-slate-800 p-6 rounded-lg my-2 border-l-2 text-xl'>
+              <p><span className='font-bold text-orange-500'>Note:</span> Setting up a static IP address to configure a DNS server may prevent you from connecting to some public Wi-Fi networks that use captive portals (these are the web pages some wireless networks employ to let users log in and use their services).</p>
               <p className='my-2'>If you are experiencing connectivity issues related to captive portals:</p>
               <ol className='list-decimal ml-8'>
                 <li>Remove the static IP addresses from the device.</li>
