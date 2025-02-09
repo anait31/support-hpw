@@ -225,47 +225,51 @@ function App() {
 
                 </TabPanel>
                 <TabPanel>
-                  <p>1.1.1.1: Faster Internet is the preferred method of setting up 1.1.1.1 DNS resolver in iOS devices. It allows you to automatically configure your phone to use 1.1.1.1 on any network you connect to, and solves iOS inability of using an alternative DNS resolver in cellular connections.
+                  <p><span className='font-bold text-orange-500'>1.1.1.1: Faster Internet</span> is the preferred method of setting up 1.1.1.1 DNS resolver in iOS devices. It allows you to automatically configure your phone to use 1.1.1.1 on any network you connect to, and solves iOS inability of using an alternative DNS resolver in cellular connections.
                     The app also allows you to enable encryption for DNS queries or enable WARP mode, which keeps all your HTTP traffic private and secure, including your DNS queries to 1.1.1.1.</p>
-                  <p>You can select between these two options in 1.1.1.1: Faster Internet's settings. By default, 1.1.1.1:Faster Internet is configured to WARP mode.</p>
-                  <h2>Set up 1.1.1.1: Faster Internet</h2>
+                  <p>You can select between these two options in 1.1.1.1: Faster {"Internet's"} settings. By default, 1.1.1.1:Faster Internet is configured to WARP mode.</p>
+                  <h2 className='text-2xl'>Set up 1.1.1.1: Faster Internet</h2>
                   <ol className='list-decimal'>
-                    <li>Download <span>1.1.1.1: Faster Internet from the App Store</span> for free.</li>
+                    <li>Download <span className='font-bold text-orange-500'>1.1.1.1: Faster Internet from the App Store</span> for free.</li>
                     <li>Launch 1.1.1.1: Faster Internet and accept the Terms of Service.</li>
                     <li>Install the VPN profile that allows your phone to connect securely to 1.1.1.1.</li>
-                    <li>Toggle the <span>WARP</span> button to <span>Connected</span>.</li>
-                    <li>
+                    <li>Toggle the <span className='font-bold text-orange-500'>WARP</span> button to <span className='font-bold text-orange-500'>Connected</span>.</li>
+                    <p>
                       Your connection to the Internet and your DNS queries are now protected. Alternatively, you may want to only encrypt your DNS queries and leave the remaining traffic unencrypted. If this is the case:
-                      <div>
-                        <ol>
-                          <li>Open 1.1.1.1: Faster Internet.</li>
-                          <li>Toggle the WARP button and choose <span>Switch to DNS only mode</span>. If the WARP toggle is disconnected, tap the <span>menu button</span>.</li>
-                          <li>You will see two options: 1.1.1.1 and WARP. Select <span>1.1.1.1 Done</span>.</li>
-                        </ol>
-                      </div>
-                      <p>You are now using encryption only for your DNS queries.</p>
-                    </li>
+                    </p>
                     <div>
-                      <h2>Configure 1.1.1.1 manually</h2>
-                      <p>If you configure 1.1.1.1 manually, you will have to do it for every WiFi network your device connects to. This method doesn't work for cellular connections.</p>
+                      <ol className='list-decimal'>
+                        <li>Open 1.1.1.1: Faster Internet.</li>
+                        <li>Toggle the WARP button and choose <span className='font-bold text-orange-500'>Switch to DNS only mode</span>. If the WARP toggle is disconnected, tap the <span className='font-bold text-orange-500'>menu button</span>.</li>
+                        <li>You will see two options: 1.1.1.1 and WARP. Select <span className='font-bold text-orange-500'>1.1.1.1</span> {'>'} <span className='font-bold text-orange-500'>Done</span>.</li>
+                      </ol>
+                    </div>
+                    <p>You are now using encryption only for your DNS queries.</p>
+
+                    <div>
+                      <h2 className='text-2xl'>Configure 1.1.1.1 manually</h2>
+                      <p className='bg-slate-800 p-6 rounded-lg my-2 border-l-2 text-xl'>If you configure 1.1.1.1 manually, you will have to do it for every WiFi network your device connects to. This method {"doesn't"} work for cellular connections.</p>
                       <div>
-                        <ol>
-                          <li>Go to <span>Settings Wi-Fi</span>.</li>
-                          <li>Select the 'i' icon next to the WiFi network you are connected to.</li>
+                        <ol className='list-decimal'>
+                          <li>Go to <span className='font-bold text-orange-500'>Settings</span> {">"} <span className='font-bold text-orange-500'>Wi-Fi</span>.</li>
+                          <li>Select the {"'i'"} icon next to the WiFi network you are connected to.</li>
                           <li>Scroll down until you see the section called Configure DNS.</li>
-                          <li>Change the configuration from <span>Automatic</span> to <span>Manual</span>.</li>
-                          <li>Select <span>Add Server</span>.</li>
+                          <li>Change the configuration from <span className='font-bold text-orange-500'>Automatic</span> to <span className='font-bold text-orange-500'>Manual</span>.</li>
+                          <li>Select <span className='font-bold text-orange-500'>Add Server</span>.</li>
                           <li>Take note of any IP addresses you might have and save them in a safe place in case you need to use them later.</li>
                           <li>
                             Remove any IP addresses that may be already listed and in their place add:
+
+                          </li>
+                          <div className='bg-slate-800 p-6 rounded-lg my-2'>
                             <ol>
                               <li>1.1.1.1</li>
                               <li>1.0.0.1</li>
                               <li>2606:4700:4700::1111</li>
                               <li>2606:4700:4700::1001</li>
                             </ol>
-                          </li>
-                          <li>Select <span>Save</span>.</li>
+                          </div>
+                          <li>Select <span className='font-bold text-orange-500'>Save</span>.</li>
                         </ol>
                       </div>
                     </div>
