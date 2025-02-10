@@ -4,10 +4,9 @@ import { Link } from 'react-router-dom'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
 import { IoLogoYoutube } from "react-icons/io";
-import { SiLivechat } from "react-icons/si";
 import heroImg from '../src/assets/1.png'
 import loginImage from '../src/assets/login.png'
-import { FaFacebookF, FaInstagram, FaTelegram } from "react-icons/fa6";
+import { FaFacebookF, FaInstagram } from "react-icons/fa6";
 import link1 from '../src/assets/link1.png'
 import link2 from '../src/assets/link2.png'
 import link3 from '../src/assets/link3.png'
