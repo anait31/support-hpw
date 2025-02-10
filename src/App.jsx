@@ -7,6 +7,7 @@ import { IoLogoWhatsapp } from "react-icons/io";
 import { RiWechat2Fill } from "react-icons/ri";
 import { SiLivechat } from "react-icons/si";
 import heroImg from '../src/assets/1.png'
+import loginImage from '../src/assets/login.png'
 
 function App() {
 
@@ -14,11 +15,14 @@ function App() {
     <>
       <div className='bg-black text-white'>
         <div className='bg-black'>
-          <div className="navbar text-neutral-content max-w-6xl mx-auto">
-            <Link className='' to={'/'}>
+          <div className="navbar text-neutral-content flex justify-between max-w-6xl mx-auto">
+            <Link className='' to={'https://hpwinvip.net'}>
+              {/* <div className='flex items-center'>
+                <p className='ml-4 text-3xl font-bold text-orange-300'> Winners PlayGround</p>
+              </div> */}
               <img className='h-12 object-cover' src={logo} alt="" />
-              <p className='ml-4 text-3xl text-orange-300'> Winners PlayGround</p>
             </Link>
+            <Link to={'https://hpwinvip.net'}><img src={loginImage} alt="" /></Link>
           </div>
         </div>
         <section className='pt-8 bg-black text-white'>
@@ -120,7 +124,7 @@ function App() {
                 </TabPanel>
                 <TabPanel>
                   <ol className='list-decimal'>
-                    <h2 className='text-2xl'>IPv4</h2>
+                    <h2 className='text-2xl -ml-4'>IPv4</h2>
                     <li>Go to System Preferences. You can find it by pressing <span className='bg-slate-400 p-1 rounded-sm'>Command</span> + <span className='bg-slate-400 p-1 rounded-sm'>Space</span> on your keyboard and typing <span className='font-bold text-orange-500'>System Preferences</span>.</li>
                     <li>Click on the <span className='font-bold text-orange-500'>Network</span> icon {'>'} <span className='font-bold text-orange-500'>Advanced</span>.</li>
                     <li>Select the <span className='font-bold text-orange-500'>DNS</span> tab. Take note of any IP addresses you might have and save them in a safe place in case you need to use them later.</li>
@@ -139,7 +143,7 @@ function App() {
                       </div>
                     </li>
                     <li>Click<span className='font-bold text-orange-500'>OK</span> {'>'}<span className='font-bold text-orange-500'>Apply</span>.</li>
-                    <h2 className='text-2xl'>IPv6</h2>
+                    <h2 className='text-2xl -ml-4 mt-8'>IPv6</h2>
                     <li>Go to System Preferences. You can find it by pressing <span className='bg-slate-400 p-1 rounded-sm'>Command</span> + <span className='bg-slate-400 p-1 rounded-sm'>Space</span> on your keyboard and typing <span className='font-bold text-orange-500'>System Preferences</span>.</li>
                     <li>Click on the <span className='font-bold text-orange-500'>Network</span> icon {'>'} <span className='font-bold text-orange-500'>Advanced</span>.</li>
                     <li>Select the <span className='font-bold text-orange-500'>DNS</span> tab. Take note of any IP addresses you might have and save them in a safe place in case you need to use them later.</li>
@@ -161,21 +165,19 @@ function App() {
                   </ol>
                 </TabPanel>
                 <TabPanel>
-                  <div>
+                  <div className='-ml-4'>
                     <p><span className='font-bold text-orange-500'>1.1.1.1: Faster Internet</span> is the preferred method of setting up 1.1.1.1 DNS resolver, as it allows you to automatically configure your phone to use 1.1.1.1 on any network you connect to.</p>
                     <p>The app also allows you to enable encryption for DNS queries or enable WARP mode, which keeps all your HTTP traffic private and secure, including your DNS queries to 1.1.1.1.</p>
-                    <p>You can select between these two options in 1.1.1.1: Faster Internet's settings. By default, 1.1.1.1:Faster Internet is configured to WARP mode.</p>
+                    <p>You can select between these two options in 1.1.1.1: Faster {"Internet's"} settings. By default, 1.1.1.1:Faster Internet is configured to WARP mode.</p>
                   </div>
-                  <h2 className='text-2xl'>Set up 1.1.1.1: Faster Internet</h2>
+                  <h2 className='text-2xl -ml-4 mt-8 mb-2'>Set up 1.1.1.1: Faster Internet</h2>
                   <ol className='list-decimal'>
                     <li>Download <span className='font-bold text-orange-500'>1.1.1.1: Faster Internet from Google Play</span> for free.</li>
                     <li>Launch 1.1.1.1: Faster Internet and accept the Terms of Service.</li>
                     <li>Toggle the <span className='font-bold text-orange-500'>WARP</span> button to <span className='font-bold text-orange-500'>Connected</span>.</li>
                     <li>Install the VPN profile that allows your phone to connect securely to 1.1.1.1.</li>
                   </ol>
-                  <p>
-                    Your connection to the Internet and your DNS queries are now protected. Alternatively, you may want to only encrypt your DNS queries and leave the remaining traffic unencrypted. If this is the case:
-                  </p>
+                  <p className='-ml-4 mt-4'> Your connection to the Internet and your DNS queries are now protected. Alternatively, you may want to only encrypt your DNS queries and leave the remaining traffic unencrypted. If this is the case:</p>
                   <div>
                     <ol className='list-decimal'>
                       <li>Open 1.1.1.1: Faster Internet.</li>
@@ -183,11 +185,11 @@ function App() {
                       <li>You will see two options: 1.1.1.1 and WARP. Select <span className='font-bold text-orange-500'>1.1.1.1</span>.</li>
                     </ol>
                   </div>
-                  <p>You are now using encryption only for your DNS queries.</p>
+                  <p className='-ml-4'>You are now using encryption only for your DNS queries.</p>
                   <div>
-                    <h2 className='text-2xl'>Configure 1.1.1.1 manually</h2>
-                    <h3 className='text-xl'>Android 9 Pie or later</h3>
-                    <p>Android Pie and later supports DNS over TLS to secure your queries through encryption. In Android, this option is called Private DNS and it prevents your queries from being tracked, modified or surveilled by third-parties. Unlike previous versions of Android, this method also ensures 1.1.1.1 does not need to be configured for each new WiFi network your smartphone joins.</p>
+                    <h2 className='text-2xl -ml-4 mt-8'>Configure 1.1.1.1 manually</h2>
+                    <h3 className='text-xl -ml-4 mb-2'>Android 9 Pie or later</h3>
+                    <p className='-ml-4'>Android Pie and later supports DNS over TLS to secure your queries through encryption. In Android, this option is called Private DNS and it prevents your queries from being tracked, modified or surveilled by third-parties. Unlike previous versions of Android, this method also ensures 1.1.1.1 does not need to be configured for each new WiFi network your smartphone joins.</p>
                     <div>
                       <ol className='list-decimal'>
                         <li>Go to <span className='font-bold text-orange-500'>Settings </span> {'>'} <span className='font-bold text-orange-500'>Network & internet</span>.</li>
@@ -198,7 +200,7 @@ function App() {
                       </ol>
                     </div>
                     <div>
-                      <h2 className='text-2xl'>Previous Android versions</h2>
+                      <h2 className='text-2xl -ml-4 mt-8 mb-2'>Previous Android versions</h2>
                       <ol className='list-decimal'>
                         <li>Open <span className='font-bold text-orange-500'>Settings</span> {'>'} <span className='font-bold text-orange-500'>Wi-Fi</span>.</li>
                         <li>Press down and hold on the name of the network you are currently connected to.</li>
@@ -221,20 +223,18 @@ function App() {
                       </ol>
                     </div>
                   </div>
-
-
                 </TabPanel>
                 <TabPanel>
-                  <p><span className='font-bold text-orange-500'>1.1.1.1: Faster Internet</span> is the preferred method of setting up 1.1.1.1 DNS resolver in iOS devices. It allows you to automatically configure your phone to use 1.1.1.1 on any network you connect to, and solves iOS inability of using an alternative DNS resolver in cellular connections.
+                  <p className='-ml-4'><span className='font-bold text-orange-500'>1.1.1.1: Faster Internet</span> is the preferred method of setting up 1.1.1.1 DNS resolver in iOS devices. It allows you to automatically configure your phone to use 1.1.1.1 on any network you connect to, and solves iOS inability of using an alternative DNS resolver in cellular connections.
                     The app also allows you to enable encryption for DNS queries or enable WARP mode, which keeps all your HTTP traffic private and secure, including your DNS queries to 1.1.1.1.</p>
-                  <p>You can select between these two options in 1.1.1.1: Faster {"Internet's"} settings. By default, 1.1.1.1:Faster Internet is configured to WARP mode.</p>
-                  <h2 className='text-2xl'>Set up 1.1.1.1: Faster Internet</h2>
+                  <p className='-ml-4'>You can select between these two options in 1.1.1.1: Faster {"Internet's"} settings. By default, 1.1.1.1:Faster Internet is configured to WARP mode.</p>
+                  <h2 className='text-2xl -ml-4 mt-8'>Set up 1.1.1.1: Faster Internet</h2>
                   <ol className='list-decimal'>
                     <li>Download <span className='font-bold text-orange-500'>1.1.1.1: Faster Internet from the App Store</span> for free.</li>
                     <li>Launch 1.1.1.1: Faster Internet and accept the Terms of Service.</li>
                     <li>Install the VPN profile that allows your phone to connect securely to 1.1.1.1.</li>
                     <li>Toggle the <span className='font-bold text-orange-500'>WARP</span> button to <span className='font-bold text-orange-500'>Connected</span>.</li>
-                    <p>
+                    <p className='-ml-4 mt-2'>
                       Your connection to the Internet and your DNS queries are now protected. Alternatively, you may want to only encrypt your DNS queries and leave the remaining traffic unencrypted. If this is the case:
                     </p>
                     <div>
@@ -244,10 +244,10 @@ function App() {
                         <li>You will see two options: 1.1.1.1 and WARP. Select <span className='font-bold text-orange-500'>1.1.1.1</span> {'>'} <span className='font-bold text-orange-500'>Done</span>.</li>
                       </ol>
                     </div>
-                    <p>You are now using encryption only for your DNS queries.</p>
+                    <p className='-ml-4 mt-2'>You are now using encryption only for your DNS queries.</p>
 
                     <div>
-                      <h2 className='text-2xl'>Configure 1.1.1.1 manually</h2>
+                      <h2 className='text-2xl -ml-4 mt-8'>Configure 1.1.1.1 manually</h2>
                       <p className='bg-slate-800 p-6 rounded-lg my-2 border-l-2 text-xl'>If you configure 1.1.1.1 manually, you will have to do it for every WiFi network your device connects to. This method {"doesn't"} work for cellular connections.</p>
                       <div>
                         <ol className='list-decimal'>
@@ -277,7 +277,7 @@ function App() {
                 </TabPanel>
               </Tabs>
             </div>
-            <div className='bg-slate-800 p-6 rounded-lg my-2 border-l-2 text-xl'>
+            <div className='bg-slate-800 p-6 rounded-lg my-2 border-l-2 text-xl mt-8'>
               <p><span className='font-bold text-orange-500'>Note:</span> Setting up a static IP address to configure a DNS server may prevent you from connecting to some public Wi-Fi networks that use captive portals (these are the web pages some wireless networks employ to let users log in and use their services).</p>
               <p className='my-2'>If you are experiencing connectivity issues related to captive portals:</p>
               <ol className='list-decimal ml-8'>
