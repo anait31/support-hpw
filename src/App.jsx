@@ -3,12 +3,17 @@ import logo from '../src/assets/logo.jpg'
 import { Link } from 'react-router-dom'
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import 'react-tabs/style/react-tabs.css';
-import { IoLogoWhatsapp, IoLogoYoutube } from "react-icons/io";
-import { RiWechat2Fill } from "react-icons/ri";
+import { IoLogoYoutube } from "react-icons/io";
 import { SiLivechat } from "react-icons/si";
 import heroImg from '../src/assets/1.png'
 import loginImage from '../src/assets/login.png'
 import { FaFacebookF, FaInstagram, FaTelegram } from "react-icons/fa6";
+import link1 from '../src/assets/link1.png'
+import link2 from '../src/assets/link2.png'
+import link3 from '../src/assets/link3.png'
+import whatsapp from '../src/assets/whatsapp.png'
+import telegram from '../src/assets/telegram.png'
+import livechat from '../src/assets/livechat.png'
 
 function App() {
 
@@ -35,9 +40,9 @@ function App() {
               <div className=''>
                 <p>Select one of the following link to continue:</p>
                 <div className='space-x-3 mt-4'>
-                  <Link to={'https://hpwin88.com'}><button className='font-bold bg-orange-400 px-6 py-2 rounded-md'>Link 1</button></Link>
-                  <Link to={'https://hpwinvipgo.com'}><button className='font-bold bg-orange-400 px-6 py-2 rounded-md'>Link 2</button></Link>
-                  <Link to={'https://hpwinvipnow.com'}><button className='font-bold bg-orange-400 px-6 py-2 rounded-md'>Link 3</button></Link>
+                  <Link to={'https://hpwin88.com'}><button className='font-bold py-2 rounded-md'><img src={link1} alt="" /></button></Link>
+                  <Link to={'https://hpwinvipgo.com'}><button className='font-bold py-2 rounded-md'><img src={link2} alt="" /></button></Link>
+                  <Link to={'https://hpwinvipnow.com'}><button className='font-bold py-2 rounded-md'><img src={link3} alt="" /></button></Link>
                 </div>
               </div>
             </div>
@@ -51,18 +56,14 @@ function App() {
               <p className='text-xl md:text-2xl my-2'>Please Contact With Our Special Customer Support Specialist.</p>
               <div className='mt-8'>
                 <div className='space-x-3 flex justify-center'>
-                  <Link className='contact-btn border-2 border-orange-400 text-orange-400 p-4 rounded-lg' to={'https://api.whatsapp.com/send?phone=60182536271'}>
-                    <IoLogoWhatsapp className='text-2xl md:text-4xl w-full'></IoLogoWhatsapp>
-                    <button className='px-2 md:px-6 py-2 rounded-md'>Whatsapp</button>
+                  <Link className='contact-btn' to={'https://api.whatsapp.com/send?phone=60182536271'}>
+                    <img src={whatsapp} alt="" />
                   </Link>
-                  <Link className='contact-btn border-2 border-orange-400 text-orange-400 p-4 rounded-lg' to={'/'}>
-                    <FaTelegram className='text-2xl md:text-4xl w-full'></FaTelegram>
-                    
-                    <button className='px-2 md:px-6 py-2 rounded-md'>Telegram</button>
+                  <Link className='contact-btn' to={'https://t.me/HPWINOFFICIAL'}>
+                    <img src={telegram} alt="" />
                   </Link>
-                  <Link className='contact-btn border-2 border-orange-400 text-orange-400 p-4 rounded-lg' to={'/'}>
-                    <SiLivechat className='text-2xl md:text-4xl w-full'></SiLivechat>
-                    <button className='px-2 md:px-6 py-2 rounded-md'>LiveChat</button>
+                  <Link className='contact-btn' to={'https://direct.lc.chat/10822877'}>
+                    <img src={livechat} alt="" />
                   </Link>
                 </div>
               </div>
